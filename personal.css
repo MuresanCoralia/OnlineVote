@@ -1,0 +1,12 @@
+/* THE PERSONAL DATA PAGE */ 
+body { 
+    margin: 0; 
+    font-family: "Poppins" , sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    background: #282a36; 
+    height: 100vh; 
+    color: #fff; 
+}

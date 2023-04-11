@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Document</title>
+   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+   <script src="data.js"></script>
+
+ </head>
+ <body>
+    <!-- Navigation Bar -->
+   <nav class="navbar">
+    <!-- Logo (titlu + imagine) -->
+    <img src="C:\Users\40743\Desktop\LicentaFinal\Interfata\Stema.png" alt=" ">
+    <div class="logo">ROMANIA</div>
+    <!-- Navigation menu -->
+    <ul class="nav-links">
+      <div class="menu">
+        <li><a href="C:\Users\40743\Desktop\LicentaFinal\Interfata\Home.html">Home</a></li>
+        <li><a href="C:\Users\40743\Desktop\LicentaFinal\Interfata\Media.html">Media</a></li>
+        <li class="services">
+          <a>Contact</a>
+          <ul class="dropdown">
+           <li><a>www.gov.ro</a></li>
+            <li><a>drp@gov.ro</a></li>
+          </ul>
+        </li>
+        <li><a class="vote" href="C:\Users\40743\Desktop\LicentaFinal\Interfata\Voteaza.html">Voteaza</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="login-box">
+    <h2>Autentificare</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="password" id="password" required>
+          <label>Parola</label>
+        </div>
+        <a onclick="login()" id="signIn">
+          <span></span>
+          <span></span>
+          <span></span>
+          Conectare
+        </a>
+        <button class="cont" onclick="window.location.href = 'Inregistrare.html'">Nu ai cont?</button>
+      </form>
+  </div>
+  
+ </body>
+ </html>
